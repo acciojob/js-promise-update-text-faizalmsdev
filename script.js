@@ -8,8 +8,7 @@ function updateTextWithPromise() {
       });
     }
 
-    updateTextWithPromise()
-      .then((message) => {
+    updateTextWithPromise().then((message) => {
         const outputElement = document.getElementById('output');
         outputElement.innerText = message;
       })
